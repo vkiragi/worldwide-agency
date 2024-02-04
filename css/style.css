@@ -30,9 +30,16 @@ p {
 
 section {
   display: flex;
+  flex-direction: column;
   height: 100vh;
   align-items: center;
   padding: 100px;
+  margin-top: 60px;
+}
+
+section.home {
+  flex-direction: row;
+  margin-top: 20;
 }
 
 /* Navigation */
@@ -156,6 +163,27 @@ section {
   height: 110%;
 }
 
+/* Services Page */
+.services {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  text-align: center;
+}
+
+.services .service {
+  padding: 30px;
+}
+
+.services .service:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.services .service .icon img {
+  max-width: 100px;
+}
+
 @media (max-width: 1068px) {
   .home-img {
     display: none;
@@ -169,5 +197,9 @@ section {
 
   section {
     padding: 100px 40px;
+  }
+
+  .navigation ul li a {
+    font-size: 2rem;
   }
 }
