@@ -180,6 +180,13 @@ section.home {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
+.services .service h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 20px;
+  color: #1b206e;
+}
+
 .services .service .icon img {
   max-width: 100px;
 }
